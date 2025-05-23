@@ -1,7 +1,7 @@
 
 # My Hardhat Token (MHT)
 
-A Solidity ERC-20 token contract with deposit/withdrawal functionality and automatic interest generation.
+A sample token smart contract implementation with deposit/withdrawal functionality and automatic interest generation.
 
 ## Smart Contract Changes
 
