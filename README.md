@@ -33,12 +33,14 @@ ALCHEMY_API_KEY=your_alchemy_api_key_here
 ```
 
 ### Install Dependencies
+```bash
 npm install
+```
 
 ## Testing
 
 ### Run All Tests
-```
+```bash
 npx hardhat test
 ```
 
@@ -46,21 +48,20 @@ npx hardhat test
 
 ### Local Development
 # Start local Hardhat node
+```bash
 npx hardhat node
+```
 
 # Deploy to local network (in another terminal)
+```bash
 npx hardhat ignition deploy ./ignition/modules/Token.js --network localhost
+```
 
 ### Testnet Deployment (Sepolia)
 # Deploy to Sepolia testnet
+```bash
 npx hardhat ignition deploy ./ignition/modules/Token.js --network sepolia
-
-# Deploy with contract verification
-npx hardhat ignition deploy ./ignition/modules/Token.js --network sepolia --verify
-
-### Mainnet Deployment
-# Deploy to Ethereum mainnet
-npx hardhat ignition deploy ./ignition/modules/Token.js --network mainnet --verify
+```
 
 ## What This Deploys
 
@@ -70,7 +71,6 @@ The deployment script creates a Token contract with the following characteristic
 - **Contract Name**: "My Hardhat Token"
 - **Symbol**: "MHT"
 - **Total Supply**: 1,000,000 tokens
-- **Decimals**: 18 (standard ERC-20)
 
 ### Token Distribution
 - **Owner Balance**: 900,000 MHT tokens (immediately available)
